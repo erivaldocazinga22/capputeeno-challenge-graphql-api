@@ -63,6 +63,4 @@ app.use('/graphql', graphqlHTTP({
   graphiql: false,
 }));
 
-app.listen(3333)
-
 export default app;

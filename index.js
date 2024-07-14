@@ -60,7 +60,11 @@ app.use(express.json())
 app.use('/graphql', graphqlHTTP({
   schema: schema,
   rootValue: root,
-  graphiql: false,
+  graphiql: true,
 }));
+
+app.listen(3333, function() {
+  console.log(`Server running in 3333`);
+})
 
 export default app;
